@@ -1,0 +1,17 @@
+ShPasteBin Help
+===============
+
+Create a new paste
+------------------
+
+Replace "help" with the name that you want your new paste to have in the address of this page and hit the enter key. The new paste will be accessible from the resulting address.
+
+Create New/Update Paste Using curl
+----------------------------------
+
+You can use the UNIX command line tool curl to update or create a new paste like this:
+
+curl -d "paste=whatIwantToPaste" -X POST http://localhost:3000/pastename
+
+
+The domain part http://localhost:3000/ is of course the same as the domain part of this page and the "pastename" part should be replaced with whatever you want your paste to be named.
